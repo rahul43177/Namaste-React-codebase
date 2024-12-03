@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React`</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- 
+    //note -> Basics of DOM Manipulation -> without react 
+    // const root = document.getElementById("root")
+    // console.log("root---" , root)
+    // const heading = document.createElement("h1")
+    // heading.innerHTML = "This is heading I am adding it inside the heaidng"
+    // root.appendChild(heading)
+    -->
+    </div>
+  </body>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <script>
+    // React.createElement takes 3 arguments:
+    // 1. The HTML element type ("h1")
+    // 2. An object for props/attributes ({})
+    // 3. The content/children to put inside the element
+    const heading = React.createElement("h1" , {} , "This is what I want to add inside the heading tag")
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    //passing the heading element to the root
+    root.render(heading)
+
+
+  </script>
+</html>
