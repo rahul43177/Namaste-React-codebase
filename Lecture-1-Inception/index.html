@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Namaste React`</title>
+    <title>Namaste React</title>
   </head>
   <body>
     <div id="root">
@@ -30,7 +30,13 @@
     // 1. The HTML element type ("h1")
     // 2. An object for props/attributes ({})
     // 3. The content/children to put inside the element
-    const heading = React.createElement("h1" , {} , "This is what I want to add inside the heading tag")
+    const heading = React.createElement(
+      "h1" , 
+      {
+        id : "heading"
+      } ,
+      "Content inside the heading"
+    )
     const root = ReactDOM.createRoot(document.getElementById("root"))
     //passing the heading element to the root
     root.render(heading)
